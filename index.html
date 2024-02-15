@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./assets/Reg.css">
+    <script>
+        function vald(){
+            let n,a,d,m,p1,p2;
+            n=document.getElementById("aname").value;
+            a=document.getElementById("Fname").value;
+            d=document.getElementById("dob").value;
+            m=document.getElementById("mail").value;
+            p1=document.getElementById("pass").value;
+             p2=document.getElementById("pass1").value;
+           if(n,a,d,m,p1,p2=="")
+           {
+            alert("Please Enter Data In Fields"); 
+            }  
+        if(p1!=p2)
+        {
+                alert("Password Doesn't Match");
+    }
+    else if(n,a,d,m,p1,p2!=""){
+        alert("Registered");
+    }
+}  
+    </script>
+</head>
+<body>
+    <form method="post">
+    <div class="labe">
+    <label for="REG">REGPAGE</label>
+    </div>
+    <div class="container">
+        <label for="NAME">Name of the applicant:</label>
+        <input type="text" name="anmae" id="aname"><br>
+        <label for="Fname">Applicants Father name:</label>
+        <input type="text" name="Fname" id="Fname"><br>
+        <label for="DOB">Date of birth:</label>
+        <input type="date" name="dob" id="dob"><br>
+        <label for="Mail">Mail:</label>
+        <input type="email" name="mail" id="mail" placeholder="mail@gmail.com"><br>
+        <label for="Pass">Password:</label>
+        <input type="password" name="pass" id="pass"><br>
+        <label for="Re">Re - enter password</label>
+        <input type="password" name="pass" id="pass1"><br>
+        <input type="submit" value="Submit"class="sub" onclick="vald()"><br>
+</div> 
+</form> 
+</body>
+</html>

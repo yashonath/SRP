@@ -1,0 +1,73 @@
+@font-face {
+    font-family: pops;
+    src: url(../assets/Oscine_Trial_Bd.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: pops;
+}
+body{
+    background-image: url(../assets/images/wp2939900-login-wallpaper.jpg);
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    transition: all 0.5s ease-out;
+}
+.container{
+    margin: 5dvh;
+    /* text-align: center; */
+    display:flex;
+    align-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: whitesmoke;
+    text-transform: capitalize;
+    line-height: 3dvh;
+}
+.labe{
+    margin: 1vh;
+    font-size: large;
+    text-align: center;
+}
+input{
+    padding: 2px;
+    border-radius: 4.5px;
+    width: 28vw;
+}
+input[type="email"]:invalid{
+    border-style: solid;
+    border-color: red;
+}
+input[type="email"]:valid{
+    border-style: solid;
+    border-color: green;
+}
+.sub{
+    width:7dvw;
+
+}
+@media (max-width:600px) {
+    input{
+        width: 40dvw;
+    }
+    body{
+        background-image: url(../assets/images/wp2939900-login-wallpaper.jpg);
+        /* background-image: url(../images/shapes-dark.png); */
+        /* background-image: linear-gradient(rgb(43, 42, 51),rgb(19, 26, 36),rgb(19, 26, 35)); */
+        background-position: right;
+        background-size: cover;
+        transition: all 0.5s ease-in;
+        height: 99dvh;
+         backdrop-filter: blur(2px);
+    }
+    .sub{
+        width:19dvw;
+        font-size: 20px;
+    
+    }
+    label{
+        font-size: 20px;
+    }
+    
+}
