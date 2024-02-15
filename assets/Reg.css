@@ -49,7 +49,7 @@ input[type="email"]:valid{
 }
 @media (max-width:600px) {
     input{
-        width: 50dvw;
+        width: 45dvw;
     }
     body{
         background-image: url(../assets/images/wp2939900-login-wallpaper.jpg);
